@@ -8,12 +8,12 @@ a:hover {
 }
 
 #headernav{
-  background: #e74c3c;
+  background:#e74c3c;
   }
 .navbar-brand{
-  font-size: 40px;
-  font-family: monospace,oxygen,serif;
-  font-weight: bolder;
+  font-size:40px;
+  font-family:monospace,serif;
+  font-weight:bolder;
 }
 
 
