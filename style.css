@@ -12,7 +12,7 @@ a:hover {
   }
 .navbar-brand{
   font-size: 40px;
-  font-family: monospace;
+  font-family: monospace,oxygen,serif;
   font-weight: bolder;
 }
 
