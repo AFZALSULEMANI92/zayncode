@@ -23,7 +23,7 @@ a:hover {
 }
 
 .banner {
-  background: url("Banner.jpg") no-repeat 0 0;
+  background: url("banner.jpg") no-repeat 0 0;
   background-size: cover;
 
 }
