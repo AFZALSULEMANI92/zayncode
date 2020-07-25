@@ -8,12 +8,12 @@ a:hover {
 }
 
 #headernav{
-  background:#e74c3c;
+  background: #e74c3c;
   }
 .navbar-brand{
-  font-size:40px;
-  font-family:monospace,serif;
-  font-weight:bolder;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bolder;
 }
 
 
@@ -23,7 +23,7 @@ a:hover {
 }
 
 .banner {
-  background: url("banner.jpg") no-repeat 0 0;
+  background: url("Banner.jpg") no-repeat 0 0;
   background-size: cover;
 
 }
@@ -106,11 +106,6 @@ a:hover {
 }
 
 
-.footer {
-  background: url("ok.jpg") no-repeat 0 0;
-  background-size: cover;
-}
-
 .lol img {
   width: 70px
 }
@@ -140,4 +135,113 @@ a:hover {
 
 .ko {
   text-size: 70px;
+}
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  background: #060c21;
+  transition: 0.5s;
+}
+
+.box:hover {
+  height: 500px;
+}
+
+.box .imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box .imgbx img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.box:hover .imgbx img {
+  opacity: 1;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(1):before,
+.box:nth-child(1):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box .content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 0px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .content {
+  opacity: 1;
+}
+
+.box .content h2 {
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.box .content h2 span {
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.mnb{
+ text-align: center;
+ font-family: monospace;
+ font-weight: 200;
+ color: #D53636CC;
+ margin-top: 10px;
 }
